@@ -1,0 +1,112 @@
+.messageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 20px 0;
+    width: 90%;
+}
+
+.myMessageBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 90%;
+    margin-left: 55px;
+}
+.messageBox .topSide {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+    background-color: transparent;
+}
+
+.messageBox .topSide .textSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 0 25px;
+    background-color: #0D1931;
+    border-radius: 15px;
+
+}
+
+.messageBox .topSide .textSide .reply {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.messageBox .topSide .textSide .textZone {
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    text-align: start;
+    
+}
+.messageBox .buttomSide {
+    display: flex;
+    padding-left: 25px;
+}
+.messageBox .buttomSide .textFunctions 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120px;
+    padding: 5px 5px;
+}
+
+.myMessageBox .topSide {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+    background-color: transparent;
+}
+
+.myMessageBox .topSide .textSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 10px 25px 15px;
+    background-color: #6156D9;
+    border-radius: 15px;
+
+}
+
+.myMessageBox .topSide .textSide .reply {
+    display: flex;
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+
+.myMessageBox .topSide .textSide .textZone {
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    text-align: start;
+    
+}
+.myMessageBox .buttomSide {
+    display: flex;
+    padding-right: 55px;
+    align-self: end;
+    margin-top: -30px;
+    
+}
+.myMessageBox .buttomSide .textFunctions 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60px;
+    padding: 5px 5px;
+    order: -1;
+}

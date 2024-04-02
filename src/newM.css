@@ -1,0 +1,19 @@
+.newM {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 470px;
+    position: fixed;
+    bottom: 52.5px;
+    margin-left: 5px;
+}
+.newM input {
+    width:300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 20px;
+    color: black;
+}
