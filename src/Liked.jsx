@@ -20,11 +20,7 @@ const Liked = () => {
             <Navbar2 />
             <h1>hello ❤️</h1>
             <Message />
-            <Message />
-            <Message />
-            <Message />
-            <Message />
-            <Message />
+            
             <div className="bLank2">
 
         </div>

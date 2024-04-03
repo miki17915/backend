@@ -37,7 +37,7 @@ const Profile = () => {
     return (
         <div className="Profile">
             <div className="aVa" onClick={handleImageClick}>
-                {image ? <img src={URL.createObjectURL(image)} alt="" className="img-display-after" id="image" /> : <img src={pic} alt="" className="img-display-before" />}
+                {image ? <img src={URL.createObjectURL(image)} alt="" className="img-display-after circular-image2" id="image" /> : <img src={pic} alt="" className="img-display-before" />}
 
                 <input
                     type="file"

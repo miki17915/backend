@@ -1,12 +1,13 @@
 .newM {
     background-color: white;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
     width: 470px;
     position: fixed;
     bottom: 52.5px;
-    margin-left: 5px;
+    margin-left: 55px;
 }
 .newM input {
     width:300px;
@@ -17,3 +18,66 @@
     font-size: 20px;
     color: black;
 }
+.newM .mm {
+    align-items: center;
+    width: 470px;
+    display: flex;
+    justify-content: space-around;
+}
+.unvisible{
+  display: none;
+}
+.repling{
+    display: flex;
+    width: 470px;
+    background-color: #D9D9D9;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .repling .line{
+    height: 44px;
+    width: 5px;
+    background-color: #5F3AF4;
+    margin: 5px -10px 5px 10px;
+  }
+  .repling .replyTo
+  {
+    text-align: start;
+    background-color: #0D1931;
+    font-size: 13px;
+    margin: 5px;
+    padding: 3px 5px;
+  }
+  .repling button
+  {
+    background-color: transparent;
+    padding: 0;
+
+  }
+.circular-image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 60px;
+  }
+  
+  .circular-image {
+    max-width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .circular-image2 {
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+
+  
+  
