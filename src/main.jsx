@@ -7,6 +7,15 @@ import './newM.css'
 import './message.css'
 import { BrowserRouter } from 'react-router-dom'
 
+const RouterProvider = () => {
+  return (
+    <React.StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </React.StrictMode>
+  );
+};
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
