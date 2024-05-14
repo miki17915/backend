@@ -1,32 +1,47 @@
-import { useState, useEffect } from 'react'
-import Navbar from './nav';
-import Navbar2 from './nav2';
-import Message from './components/message';
+import { useState, useEffect } from "react";
+import Navbar from "./nav";
+import Navbar2 from "./nav2";
+import Message from "./components/message";
+import { collection, getDocs, query, where } from "firebase/firestore";
+import { db } from "./firebaseConfig";
 
 const Liked = () => {
+  const [color, setColor] = useState("#C9E8E4");
+  const [likedMessages, setLikedMessages] = useState([]);
 
-    const [color, setColor] = useState('#C9E8E4')
-    const click = color => {
-        setColor(color)
-    }
-    /* This is where we actually
-       change background color */
-    useEffect(() => {
-        document.body.style.backgroundColor = color
-    }, [color])
+  useEffect(() => {
+    const fetchLikedMessages = async () => {
+      const q = query(collection(db, "messages"), where("isLiked", "==", true));
+      const querySnapshot = await getDocs(q);
+      let messages = [];
+      querySnapshot.forEach((doc) => {
+        messages.push({id: doc.id, ...doc.data()});
+      });
+      setLikedMessages(messages);
+    };
 
-    return (
-        <div className="Liked">
-            <Navbar2 />
-            <h1>hello ❤️</h1>
-            <Message />
-            
-            <div className="bLank2">
+    fetchLikedMessages();
+  }, []);
 
-        </div>
-            <Navbar />
-        </div>
+  useEffect(() => {
+    document.body.style.backgroundColor = color;
+  }, [color]);
 
-    )
-}
+  return (
+    <div className="Liked">
+      <Navbar2 />
+        <h1>Liked messages here:</h1>
+      {likedMessages.length > 0 ? (
+        likedMessages.map((message) => (
+          <Message key={message.id} data={message} />
+        ))
+      ) : (
+        <div>No liked messages</div>
+      )}
+
+      <div className="bLank2"></div>
+      <Navbar />
+    </div>
+  );
+};
 export default Liked;

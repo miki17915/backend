@@ -10,8 +10,7 @@ import Home from './Home.jsx';
 import Signup from './Signup.jsx';
 import Liked from './Liked.jsx';
 import Bookmark from './bookmark.jsx';
-import DisLike from './dislike.jsx';
-import DeletedM from './deletedm.jsx';
+
 import Profile from './Profile.jsx';
 import Signup2 from './Signup2.jsx';
 
@@ -29,8 +28,7 @@ function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/Liked" element={<Liked />} />
       <Route path="/bookmark" element={<Bookmark />} />
-      <Route path="/dislike" element={<DisLike />} />
-      <Route path="/deletedm" element={<DeletedM />} />
+      
       <Route path="/profile" element={<Profile />} />
       </Routes>
     </>

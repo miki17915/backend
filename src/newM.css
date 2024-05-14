@@ -6,8 +6,9 @@
     justify-content: space-around;
     width: 470px;
     position: fixed;
-    bottom: 52.5px;
-    margin-left: 55px;
+    bottom: 46px;
+    z-index: 5;
+   
 }
 .newM input {
     width:300px;

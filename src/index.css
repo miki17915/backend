@@ -29,6 +29,35 @@ body {
   min-width: 320px;
   min-height: 100vh;
 }
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+}
+.Profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.Bookmark h1, .Liked h1{
+  font-size: 30px;
+  text-wrap: wrap;
+  width: 500px;
+  position: fixed;
+  top: 65px;
+  text-align: center;
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+
 
 h1 {
   font-size: 3.2em;
@@ -110,4 +139,11 @@ button:focus-visible {
 .set
 {
   margin: 10px 15px;
+}
+.img-display-after,
+.img-display-before {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
